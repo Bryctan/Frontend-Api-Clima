@@ -7,17 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class ClientService {
 
-  // private api_url = 'https://omdbapi.com/?apikey';
-  // private api_key = 'e9e40461';
-
   constructor(private http: HttpClient) { }
 
-  // obtenerPeliculas(nombre: string): Observable<any> {
-  //   return this.http.get(`${this.api_url}=${this.api_key}&s=${nombre}`);
-  // }
-  // getTest(route:string):Observable<any>{
-  //   return this.http.get(route);
-  // }
   getRequest(route: string, queries?: Object, headers?: Object): Observable<any> {
     let reqHeaders = new HttpHeaders();
     let reqParams = new HttpParams();

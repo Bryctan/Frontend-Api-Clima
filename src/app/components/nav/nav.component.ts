@@ -7,11 +7,5 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-
-  
-  
-
-  constructor(
-    public auth: AuthService
-  ) { }
-  }
+  constructor(public auth: AuthService){}
+}
